@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-arabic: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-primary: #ea580c; /* orange-600 */
+  --color-brand-dark: #0F0F0F; /* dark background */
+  --color-brand-light: #ffffff; /* text light */
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .glass-dark {
+    background: rgba(28, 25, 23, 0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+}
